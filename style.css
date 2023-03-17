@@ -1,9 +1,14 @@
 .grid-main {
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  min-height: 140vh;
-  gap: 5px 5px;
+  grid-template-columns: repeat(4, 130px);
+  grid-template-rows: repeat(6, 130px);
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(85, 85, 199);
+
 }
 
 .grid-main button {
@@ -20,15 +25,17 @@
 
 .result {
   display: grid;
-  grid-row: 1/5;
-  background-color: RGB(158, 158, 158);
+  grid-column: 1/5;
+  background-color: rgb(21, 20, 51);
 }
 .reset {
   display: grid;
+  grid-column: 1/3;
 }
 
 .delete {
   display: grid;
+  grid-column: 3/5;
 }
 .numbers {
   display: grid;
@@ -36,3 +43,7 @@
 .operators {
   display: grid;
 }
+
+.grid-main button:hover {
+    background-color: rgb(200, 190, 241);
+  }
